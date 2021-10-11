@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,13 +8,12 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { LangInterceptor } from './helpers/interceptor';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/locales/');
 }
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     FormsModule,
     NgbModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
@@ -34,7 +34,13 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
   })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LangInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
