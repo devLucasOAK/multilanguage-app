@@ -1,0 +1,9 @@
+{
+    "BUY": {
+        "TEXT": "يشتري",
+        "PLACEHOLDER": "3 غرف غادرت"
+    },
+    "congratulations": "تهانينا!",
+    "not_enough": "ليس كافي!",
+    "please_set_quantity": "يرجى تحديد كمية!"
+}

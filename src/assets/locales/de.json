@@ -1,0 +1,9 @@
+{
+    "BUY": {
+        "TEXT": "Kaufen",
+        "PLACEHOLDER": "3 Zimmer übrig"
+    },
+    "congratulations": "Herzliche Glückwünsche!",
+    "not_enough": "Nicht genug!",
+    "please_set_quantity": "Bitte geben Sie eine Menge ein!"
+}

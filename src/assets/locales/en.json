@@ -1,0 +1,9 @@
+{
+    "BUY": {
+        "TEXT": "Buy",
+        "PLACEHOLDER": "3 Rooms left"
+    },
+    "congratulations": "Congratulations!",
+    "not_enough": "Not Enough!",
+    "please_set_quantity": "Please set a quantity!"
+}

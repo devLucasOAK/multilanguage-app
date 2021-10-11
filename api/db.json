@@ -1,0 +1,26 @@
+{
+    "posts": [
+        
+        {
+            "id": 1,
+            "title": "Brazil Wild Rift",
+            "description": "Cupidatat consectetur quis veniam sunt cupidatat.",
+            "price": 90.00,
+            "image": "dummyimage.com/100&text=Brazil"
+        },
+        {
+            "id": 2,
+            "title": "American World Trade Center",
+            "description": "Cupidatat consectetur quis veniam sunt cupidatat.",
+            "price": 12.00,
+            "image": "dummyimage.com/100&text=America"
+        },
+        {
+            "id": 3,
+            "title": "Wasted Woodlands of France",
+            "description": "Cupidatat consectetur quis veniam sunt cupidatat.",
+            "price": 40.00,
+            "image": "dummyimage.com/100&text=France"
+        }
+    ]
+}
